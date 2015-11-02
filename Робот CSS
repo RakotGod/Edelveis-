@@ -1,0 +1,10 @@
+colors = {
+ css: "background",
+ change: function(target, value){
+  $(target).css(this.css, value);
+ },
+ Get: function(target){
+  return $(target).css(this.css);
+ }
+};
+colors.change('#tl','white');
