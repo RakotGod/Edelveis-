@@ -51,7 +51,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8a4d', end
 
 .actionArea{
  width:365px;
- background-color:gold;
+ background-color:lightblue;
  text-align:left;
  position: fixed;
  bottom:0;
