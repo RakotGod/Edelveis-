@@ -1,7 +1,61 @@
 /* здесь настраивается внешний вид редактора 
  Если описать задачу, которую выполняет этот файл стилей, то забудет формулироваться так :
+Часть стилей устанавливается в js файле
 */
 
 body{
- background-color: gold;
+ background-color:gold;
+ padding:0px;
+ margin: 0px;
+
+}
+#leftArea, #rightArea{
+ background-color:grey;
+ position: fixed;
+ z-index: 1;
+
+ width: 20%;
+ height: 100%;
+}
+
+#leftArea{
+ left:0;
+ background: #1e5799;
+background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 20%, #207cca 80%, #8c8a4d 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1e5799), color-stop(20%,#2989d8), color-stop(80%,#207cca), color-stop(100%,#8c8a4d));
+background: -webkit-linear-gradient(left, #1e5799 0%,#2989d8 20%,#207cca 80%,#8c8a4d 100%);
+background: -o-linear-gradient(left, #1e5799 0%,#2989d8 20%,#207cca 80%,#8c8a4d 100%);
+background: -ms-linear-gradient(left, #1e5799 0%,#2989d8 20%,#207cca 80%,#8c8a4d 100%);
+background: linear-gradient(to right, #1e5799 0%,#2989d8 20%,#207cca 80%,#8c8a4d 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#8c8a4d',GradientType=1 );
+}
+
+#rightArea{
+ right:0;
+ background: #8c8a4d;
+background: -moz-linear-gradient(left, #8c8a4d 0%, #207cca 20%, #2989d8 80%, #1e5799 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#8c8a4d), color-stop(20%,#207cca), color-stop(80%,#2989d8), color-stop(100%,#1e5799));
+background: -webkit-linear-gradient(left, #8c8a4d 0%,#207cca 20%,#2989d8 80%,#1e5799 100%);
+background: -o-linear-gradient(left, #8c8a4d 0%,#207cca 20%,#2989d8 80%,#1e5799 100%);
+background: -ms-linear-gradient(left, #8c8a4d 0%,#207cca 20%,#2989d8 80%,#1e5799 100%);
+background: linear-gradient(to right, #8c8a4d 0%,#207cca 20%,#2989d8 80%,#1e5799 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8a4d', endColorstr='#1e5799',GradientType=1 );
+}
+
+#displayArea{
+ height:500px;
+ overflow:scroll;
+ margin:5px;
+}
+
+
+.actionArea{
+ width:365px;
+ background-color:gold;
+ text-align:left;
+ position: fixed;
+ bottom:0;
+ border-top:1px solid;
+ z-index:2;
+ 
 }
